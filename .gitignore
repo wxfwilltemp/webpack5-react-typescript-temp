@@ -3,6 +3,7 @@ node_modules
 /dist
 /logs
 temp_cache
+.eslintcache
 
 # local env files
 .env.local
