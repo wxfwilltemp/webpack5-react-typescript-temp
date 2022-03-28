@@ -1,7 +1,7 @@
 /*
  * @Author: will
  * @Date: 2022-03-23 09:53:24
- * @LastEditTime: 2022-03-28 12:18:38
+ * @LastEditTime: 2022-03-28 16:20:09
  * @LastEditors: will
  * @Description:
  */
@@ -18,7 +18,7 @@ import './main.css';
 // redux
 import { Provider } from 'react-redux';
 import store from './store/index';
-// 持久化
+// 持久化数据
 import { PersistGate } from 'redux-persist/lib/integration/react';
 import { persistor } from './store/index';
 // ajax
