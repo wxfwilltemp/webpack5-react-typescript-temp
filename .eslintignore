@@ -1,0 +1,8 @@
+/config
+.history
+public
+dist
+mock
+src/assets
+gulpfile.js
+gulpServeConfig.js
