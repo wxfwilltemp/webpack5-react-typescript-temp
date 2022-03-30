@@ -17,8 +17,7 @@
     "gh-pages": "gh-pages -d dist",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
-    "commit": "git add . && git-cz",
-    "commitlint": "node ./scripts/verifyCommitMsg.js && commitlint"
+    "commit": "git add . && git-cz"
   },
   "lint-staged": {
     "src/**/*.{less, css}": [
