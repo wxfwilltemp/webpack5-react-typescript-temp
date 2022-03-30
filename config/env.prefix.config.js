@@ -1,10 +1,3 @@
-/*
- * @Author: will
- * @Date: 2021-12-30 10:54:08
- * @LastEditTime: 2022-03-25 17:54:45
- * @LastEditors: will
- * @Description:
- */
 console.log(`当前的打包环境===${process.env.NODE_ENV}`);
 
 // 不同环境下的打包配置文件

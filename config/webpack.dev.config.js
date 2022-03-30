@@ -1,10 +1,3 @@
-/*
- * @Author: will
- * @Date: 2022-03-23 09:56:30
- * @LastEditTime: 2022-03-25 16:24:17
- * @LastEditors: will
- * @Description:
- */
 const { merge } = require('webpack-merge');
 const BaseConfig = require('./webpack.base.config');
 const path = require('path');
