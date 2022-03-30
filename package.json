@@ -8,9 +8,9 @@
     "test": "cross-env NODE_ENV=test webpack --config config/webpack.prod.config.js",
     "build": "cross-env NODE_ENV=prod webpack --config config/webpack.prod.config.js",
     "analyzer": "cross-env NODE_ENV=analyzer webpack --config config/webpack.prod.config.js",
-    "prettier": "prettier --write \"src/**/*.{js,jsx,tsx,ts,less,md,json}\"",
+    "prettier": "prettier --write \"src/**/*.{js,jsx,tsx,ts,less}\"",
     "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src",
-    "lint:style": "stylelint --fix \"src/**/*.less\" --syntax less",
+    "lint:style": "stylelint --fix \"src/**/*.less\" --custom-syntax postcss-less",
     "lint:prettier": "prettier --check \"src/**/*\" --end-of-line auto",
     "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx --format=pretty ./src && npm run lint:style",
     "lint": "npm run lint:js && npm run lint:style && npm run lint:prettier && lint-staged",
@@ -20,9 +20,11 @@
     "commit": "git add . && git-cz"
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": "npm run lint:fix",
-    "**/*.{js,jsx,tsx,ts,less,md,json}": [
-      "prettier --write"
+    "src/**/*.{js,ts,tsx}": [
+      "npm run lint:fix"
+    ],
+    "src/**/*.{js,tsx,ts}": [
+      "prettier --write ./src"
     ]
   },
   "config": {
@@ -75,6 +77,7 @@
     "mini-css-extract-plugin": "^2.6.0",
     "node-notifier": "^10.0.1",
     "postcss": "^8.4.12",
+    "postcss-less": "^6.0.0",
     "postcss-loader": "^6.2.1",
     "postcss-preset-env": "^7.4.3",
     "prettier": "^2.6.1",
