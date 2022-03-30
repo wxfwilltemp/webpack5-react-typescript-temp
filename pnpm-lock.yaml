@@ -20,6 +20,7 @@ specifiers:
   axios: ^0.26.1
   babel-loader: ^8.2.4
   babel-plugin-import: ^1.13.3
+  chalk: 4.0.0
   commitizen: ^4.2.4
   copy-webpack-plugin: ^10.2.4
   cross-env: ^7.0.3
@@ -86,6 +87,7 @@ devDependencies:
   '@umijs/fabric': 2.10.2
   babel-loader: 8.2.4_fa907c5a4f16ccc493e21649ccc59574
   babel-plugin-import: 1.13.3
+  chalk: 4.0.0
   commitizen: 4.2.4
   copy-webpack-plugin: 10.2.4_webpack@5.70.0
   cross-env: 7.0.3
@@ -3056,6 +3058,14 @@ packages:
   /chalk/3.0.0:
     resolution: {integrity: sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==}
     engines: {node: '>=8'}
+    dependencies:
+      ansi-styles: 4.3.0
+      supports-color: 7.2.0
+    dev: true
+
+  /chalk/4.0.0:
+    resolution: {integrity: sha512-N9oWFcegS0sFr9oh1oz2d7Npos6vNoWW9HvtCg5N1KRFpUhaAhvTv5Y58g880fZaEYSNm3qDz8SU1UrGvp+n7A==}
+    engines: {node: '>=10'}
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0

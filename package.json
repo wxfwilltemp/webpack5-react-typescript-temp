@@ -62,6 +62,7 @@
     "@umijs/fabric": "^2.10.2",
     "babel-loader": "^8.2.4",
     "babel-plugin-import": "^1.13.3",
+    "chalk": "4.0.0",
     "commitizen": "^4.2.4",
     "copy-webpack-plugin": "^10.2.4",
     "cross-env": "^7.0.3",

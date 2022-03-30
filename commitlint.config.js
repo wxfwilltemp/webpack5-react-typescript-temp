@@ -1,7 +1,7 @@
 /*
  * @Author: will
  * @Date: 2022-03-28 17:25:51
- * @LastEditTime: 2022-03-28 17:25:56
+ * @LastEditTime: 2022-03-30 15:03:09
  * @LastEditors: will
  * @Description:
  */
@@ -24,6 +24,7 @@ module.exports = {
         'chore', // 构建过程或辅助工具的变动
         'revert', // 回退
         'build', // 打包
+        'types', // ts类型
       ],
     ],
     // subject 大小写不做校验
