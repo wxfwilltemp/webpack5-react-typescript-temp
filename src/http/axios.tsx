@@ -1,16 +1,14 @@
 /*
  * @Author: will
  * @Date: 2021-09-07 14:26:34
- * @LastEditTime: 2022-03-25 12:35:48
+ * @LastEditTime: 2022-03-30 13:42:05
  * @LastEditors: will
  * @Description:
  */
 import axios from 'axios';
 import config from './config';
 import { message } from 'antd';
-// import { createBrowserHistory } from "history";
 import store from '../store/index';
-// const history = createBrowserHistory({ forceRefresh: true });
 
 // 请求次数
 let repeat_count = 0;
