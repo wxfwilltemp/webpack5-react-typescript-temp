@@ -1,7 +1,7 @@
 /*
  * @Author: will
  * @Date: 2022-03-28 17:20:11
- * @LastEditTime: 2022-03-30 15:04:20
+ * @LastEditTime: 2022-03-30 16:31:10
  * @LastEditors: will
  * @Description:
  */
@@ -23,8 +23,10 @@ module.exports = {
   // 步骤
   messages: {
     type: '请选择提交的类型；',
+    customScope: '请输入修改的范围（可选）',
     subject: '请简要描述提交（必填）',
-    // footer: '请选择要关闭的issue（可选）',
+    body: '请输入详细描述（可选）',
+    footer: '请选择要关闭的issue（可选）',
     confirmCommit: '确认要使用以上信息提交？（y/n）',
   },
 
