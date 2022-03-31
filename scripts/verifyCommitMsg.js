@@ -1,16 +1,11 @@
 /*
  * @Author: will
  * @Date: 2022-03-30 11:59:53
- * @LastEditTime: 2022-03-31 10:37:28
+ * @LastEditTime: 2022-03-31 10:42:46
  * @LastEditors: will
  * @Description:
  */
 const chalk = require('chalk');
-console.log(
-  require('../.cz-config.js')
-    .types.map((item) => item.value)
-    .join('|'),
-);
 chalk.enabled = true;
 chalk.level = 1;
 const path = require('path');
@@ -21,7 +16,7 @@ let regCommitType = require('../.cz-config.js')
   .join('|');
 // const commitRE =
 //   /^(revert: )?(feat|fix|docs|style|refactor|perf|test|chore|types|revert|build)(\(.+\))?: .{1,50}/;
-console.log(regCommitType);
+console.log(`  可用前缀: ${chalk.green(regCommitType)}`);
 const commitRE = new RegExp('^(revert: )?(' + regCommitType + ')((.+))?: .{1,50}', 'g');
 if (msg.includes('Merge branch')) {
   // 自动合并不加验证
