@@ -1,16 +1,16 @@
 /*
  * @Author: will
  * @Date: 2022-03-30 11:59:53
- * @LastEditTime: 2022-03-30 15:18:45
+ * @LastEditTime: 2022-03-31 09:45:33
  * @LastEditors: will
  * @Description:
  */
 const chalk = require('chalk');
+chalk.enabled = true;
+chalk.level = 1;
 const path = require('path');
 const msgPaths = path.resolve('.git/COMMIT_EDITMSG');
-console.log('msgPaths', msgPaths);
 let msg = require('fs').readFileSync(msgPaths, 'utf-8').trim();
-console.log('===', msg);
 const commitRE =
   /^(revert: )?(feat|fix|docs|style|refactor|perf|test|chore|types|revert|build)(\(.+\))?: .{1,50}/;
 if (msg.includes('Merge branch')) {
@@ -25,6 +25,6 @@ if (msg.includes('Merge branch')) {
     );
     process.exit(1);
   } else {
-    console.log(`${chalk.green('恭喜提交通过√')}`);
+    console.log(`${chalk.green('√恭喜提交通过')}`);
   }
 }
