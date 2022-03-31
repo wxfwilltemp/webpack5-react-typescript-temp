@@ -1,7 +1,7 @@
 /*
  * @Author: will
  * @Date: 2022-03-30 11:59:53
- * @LastEditTime: 2022-03-31 10:42:46
+ * @LastEditTime: 2022-03-31 10:52:19
  * @LastEditors: will
  * @Description:
  */
@@ -30,6 +30,6 @@ if (msg.includes('Merge branch')) {
     );
     process.exit(1);
   } else {
-    console.log(`${chalk.green('√恭喜提交通过')}`);
+    console.log(`  ${chalk.green('√恭喜提交通过')}`);
   }
 }

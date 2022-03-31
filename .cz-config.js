@@ -1,25 +1,25 @@
 /*
  * @Author: will
  * @Date: 2022-03-28 17:20:11
- * @LastEditTime: 2022-03-31 10:49:18
+ * @LastEditTime: 2022-03-31 10:57:05
  * @LastEditors: will
  * @Description:
  */
 module.exports = {
   // 可选类型
   types: [
-    { value: 'init', name: 'init:    初始提交' },
+    { value: 'init', name: 'init:      初始提交' },
     { value: 'feat', name: 'feat:      新功能' },
     { value: 'fix', name: 'fix:       修复bug' },
-    { value: 'ui', name: 'ui:       更新ui' },
+    { value: 'ui', name: 'ui:        更新ui' },
     { value: 'docs', name: 'docs:      修改文档' },
     { value: 'style', name: 'style:     样式修改' },
     { value: 'refactor', name: 'refactor:  代码重构' },
     { value: 'pref', name: 'pref:      性能优化' },
     { value: 'test', name: 'test:      增加测试' },
     { value: 'chore', name: 'chore:     更改配置文件' },
-    { value: 'add', name: 'add:    添加依赖' },
-    { value: 'del', name: 'del:    删除代码或文件' },
+    { value: 'add', name: 'add:       添加依赖' },
+    { value: 'del', name: 'del:       删除代码或文件' },
     { value: 'revert', name: 'revert:    版本回退' },
     { value: 'build', name: 'build:     打包发布' },
   ],
