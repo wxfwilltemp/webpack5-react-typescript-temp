@@ -1,7 +1,7 @@
 /*
  * @Author: will
  * @Date: 2022-03-28 17:20:11
- * @LastEditTime: 2022-03-31 10:19:46
+ * @LastEditTime: 2022-03-31 10:49:18
  * @LastEditors: will
  * @Description:
  */
@@ -27,7 +27,7 @@ module.exports = {
   // 步骤
   messages: {
     type: '请选择提交的类型；',
-    customScope: '请输入修改的范围（可选）',
+    scope: '请输入修改的范围（可选）',
     subject: '请简要描述提交（必填）',
     body: '请输入详细描述（可选）',
     footer: '请选择要关闭的issue（可选）',
@@ -35,7 +35,7 @@ module.exports = {
   },
 
   // 跳过步骤
-  skipQuestions: ['customScope', 'body', 'footer'],
+  skipQuestions: ['scope', 'body', 'footer'],
 
   // 默认长度
   subjectLimit: 100,
