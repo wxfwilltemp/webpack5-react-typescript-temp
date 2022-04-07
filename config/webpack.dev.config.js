@@ -45,10 +45,33 @@ const config = {
   },
   module: {
     rules: [
+      // {
+      //   test: /\.(le|c)ss$/i,
+      //   // include: resolve("src"),
+      //   use: ['style-loader', 'css-loader', 'postcss-loader', 'less-loader'],
+      // },
       {
-        test: /\.(le|c)ss$/i,
-        // include: resolve("src"),
-        use: ['style-loader', 'css-loader', 'postcss-loader', 'less-loader'],
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
+      },
+      {
+        test: /\.less$/i,
+        include: resolve('src'),
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 2,
+              modules: {
+                mode: 'local',
+                localIdentName: '[name]__[local]__[hash:base64:5]',
+              },
+            },
+          },
+          'postcss-loader',
+          'less-loader',
+        ],
       },
     ],
   },
