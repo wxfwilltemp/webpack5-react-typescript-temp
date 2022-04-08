@@ -1,10 +1,3 @@
-/*
- * @Author: will
- * @Date: 2022-03-23 12:43:17
- * @LastEditTime: 2022-03-25 18:40:31
- * @LastEditors: will
- * @Description:
- */
 module.exports = {
   presets: [
     [

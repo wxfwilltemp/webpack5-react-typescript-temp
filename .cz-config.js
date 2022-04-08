@@ -1,10 +1,3 @@
-/*
- * @Author: will
- * @Date: 2022-03-28 17:20:11
- * @LastEditTime: 2022-03-31 10:57:05
- * @LastEditors: will
- * @Description:
- */
 module.exports = {
   // 可选类型
   types: [

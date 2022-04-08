@@ -1,10 +1,3 @@
-/*
- * @Author: will
- * @Date: 2021-07-30 16:45:39
- * @LastEditTime: 2022-04-07 10:23:54
- * @LastEditors: will
- * @Description:
- */
 import style from './login.less';
 import HelloSvg from '@/assets/img/hello.svg';
 import { Button } from 'antd';
